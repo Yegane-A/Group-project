@@ -1,0 +1,28 @@
+{
+  "name": "0.0.1",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "group-project"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yegane-A/Group-project.git"
+  },
+  "keywords": [
+    "2023"
+  ],
+  "author": "Jerry -yogi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yegane-A/Group-project/issues"
+  },
+  "homepage": "https://github.com/Yegane-A/Group-project#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}
