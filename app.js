@@ -8,6 +8,11 @@ const path = require('path');
 require('colors');
 
 const frontPage = require('./routes/index');
+const about = require('./routes/about');
+const service = require('./routes/service');
+const occasion = require('./routes/occasion');
+
+
 
 
 const app = express();
@@ -28,6 +33,12 @@ app.set('view engine', 'ejs');  // set up ejs for templating => test
 // test about what line 26 is doing. setting up a route
 // routers
 app.use('/', frontPage);
+app.use('/about', about);
+app.use('/service', service);
+app.use('/occasion', occasion);
+
+
+
 
 // errors : page not found
 app.use((req, res, next) => {
