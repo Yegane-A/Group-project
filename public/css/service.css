@@ -1,0 +1,12 @@
+p{
+    text-align: center;
+    font-size: large;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+img{
+    margin-left: 33%;
+    border: black solid 2px;
+    border-radius: 10px;
+}

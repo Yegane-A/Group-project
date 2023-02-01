@@ -1,5 +1,12 @@
 
 img {
-    padding: 100px;
-    border: 200px;
+    padding: 80px;
+    border: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+#occasionTable {
+    margin-bottom: 10%;
+    margin-left: 20%;
 }
