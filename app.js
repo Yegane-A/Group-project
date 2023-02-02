@@ -11,7 +11,10 @@ const frontPage = require('./routes/index');
 const about = require('./routes/about');
 const service = require('./routes/service');
 const occasion = require('./routes/occasion');
-
+const birthday = require('./routes/birthday');
+const funeral = require('./routes/funeral');
+const special = require('./routes/special');
+const wedding = require('./routes/wedding');
 
 
 
@@ -36,6 +39,10 @@ app.use('/', frontPage);
 app.use('/about', about);
 app.use('/service', service);
 app.use('/occasion', occasion);
+app.use('/birthday', birthday);
+app.use('/funeral', funeral);
+app.use('/special', special);
+app.use('/wedding', wedding);
 
 
 
