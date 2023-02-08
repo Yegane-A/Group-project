@@ -5,6 +5,7 @@
 // test about what lines 6-8 are doing. Getting code libraries to use in this file 
 const express = require('express');
 const path = require('path');
+const session = require('express-session');
 require('colors');
 
 const frontPage = require('./routes/index');
@@ -32,6 +33,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // template engine 
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');  // set up ejs for templating => test
+
+app.use(session({
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true,
+}));
+
+    
 
 // test about what line 26 is doing. setting up a route
 // routers

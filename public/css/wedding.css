@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+p{
+    font-size: larger;
+}
+img {
+    padding: 80px;
+    border: 100px;
+    width: 400px;
+    height: auto;
+}	
