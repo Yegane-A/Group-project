@@ -4,19 +4,20 @@ const express = require('express');
 const routes = express.Router();
 
 // get loggin page
-router.get('/', (req, res) => {
+routes.get('/', (req, res) => {
+    res.render('loggin', {title: 'Login'});
 
 }); 
 
 // post loggin page
-router.post('/', (req, res) => {
+routes.post('/', (req, res) => {
     if (req.body.username === 'Jerry' && req.body.password ==='123') 
        { req.session.username = req.body.username;
         req.session.isLoggin = true;
         res.redirect('/');
-        } else {
-            res.redirect('/login');
-        }
-         });
+    } else {
+        res.redirect('/loggin');
+    }
+    });
 
-         module.exports = router;
+module.exports = routes;
